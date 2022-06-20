@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(216, 8, 235);
+    font-family: Calibri;
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: white;
+    background-color: rgb(17, 0, 255);
+    border-radius: 10px;    
+}
+.outerLayer{
+    justify-content: center;
+    /* display: flex; */
+    height: 370px;
+    margin-top: 1%;
+}
+.mainLayer {
+    justify-content: center;
+    display: flex;
+    height: 352px;
+    margin-top: 1%;
+}
+.innerLayer {
+    border: 1px solid rgb(7, 7, 7);
+    width: 30%;
+    /* text-align: center; */
+    border-radius: 10px;
+    color: white;
+}
+.layer{
+    /* border: 1px solid rgb(7, 7, 7); */
+    background-color: white;
+    /* color: #070707; */
+    width: 40%;
+}
+/* .secondLayer{
+    border: 1px solid rgb(7, 7, 7);
+    width: 40%;
+    text-align: left; 
+     border-radius: 10px;
+    color: rgb(8, 8, 8);
+    background-color: white;
+} */ 
+.user,.status,.from,.to,.cc{
+    padding-top: 15px;
+    margin-left: 10px;
+}
+.comment{
+    /* padding-top: 15px; */
+    padding-bottom: 15px;
+    margin-left: 10px;    
+}
+.title{
+    text-align: center;
+}
+.check{
+    padding-bottom: 15px;
+    text-align: center;
+}
+.submit{
+    text-align: center;
+    /* padding-top: 15px; */
+    margin-left: 10px;
+}
+#input1,#input2{
+    margin-left: 15px;
+}
+#input2{
+    margin-left: 5px;
+}
+#input3{
+    margin-left:9px;
+}
+#input4{
+    margin-left: 28px;
+}
+#input5{
+    margin-left: 26px;
+}
+#input6{
+    height: 40px;
+    width: 60%;
+    margin-left: 30px;
+}
+.layer{
+    margin-left: 10px;
+}
