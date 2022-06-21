@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    margin: 0px;
+    background-color: rgb(3, 2, 0);
+    height: 35px;
+    padding: 15px 10px 10px 10px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color: aliceblue;
+}
+body{
+    background-color:burlywood;
+    margin: 250px 80px 80px 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.FormContainer{
+    width: 600px;
+    height:auto;
+    margin: auto;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0px 0px 10px 0px;
+}
+#errorMessage{
+    width: 100%;
+    height: 25px;
+    margin: 8px 0px 8px 0px;
+    padding: 2px 0px 0px 0px;
+
+}
+button{
+    width: 100px;
+    height: 26px;
+    background-color:rgb(3, 2, 0) ;
+    font-size: 16px;
+    border: none;
+    margin: 8px;
+    color: aliceblue;
+}
+.firstInputBox,.secondInputBox{
+    width: 100%;
+    height: 70px;
+    margin: 8px 0px 8px 0px;
+}
+.firstInputBox label,.secondInputBox label{
+    margin: 3px 15px 3px 5px;
+    font-size: 18px;
+}
+input{
+    width: 250px;
+    height: 25px;
+    margin: 7px;
+    border:2px solid burlywood;
+    border-radius: 5px;
+    padding:0px 0px 0px 5px;
+    font-size: 18pxs;
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(109, 155, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:80px 80px 80px 80px;
+}
+.formContainer{
+    background-color: aliceblue;
+    width: 600px;
+    margin: auto;
+    height: 350px;
+    border-radius: 15px;
+    padding: 0px 0px 15px 0px;
+
+}
+.header{
+    width: 100%;
+    height:80px;
+    background-color:rgb(44, 101, 206);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    padding:30px 10px 5px 10px;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+ul li{
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+}
+button{
+    width: 200px;
+    height: 32px; 
+    background-color:rgb(44, 101, 206);
+    border-style: none;
+    border-radius: 8px;
+    margin: 5px;
+    position: relative;
+    left:195px;
+    color: aliceblue;
+    font-size: 16px;
+}
+input,#action{
+    width: 250px;
+    height: 29px;
+}
+ul .errorMesssage{
+    width:350px;
+    height: 25px;
+    text-align: center;
+    position: relative;
+    left: 130px;
+    font-size: 14px;
+}
