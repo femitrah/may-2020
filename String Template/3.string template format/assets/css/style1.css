@@ -1,0 +1,63 @@
+.outer{
+    justify-content: center;
+    display:flex;
+    /* margin-top:14%; */
+    padding:25px;
+    height:400px;
+}
+body{
+ background-color:#03a9f438;
+}
+.container{
+    width:640px;
+    background-color:#00968854;
+    border-radius:32px;
+    padding:15px;
+}
+button{
+    background-color: azure;
+    padding: 3px;
+    border-radius: 10px;
+}
+.btn{
+    margin-top: 20px;
+    display:flex;
+    gap:10px;
+}
+button,.logo{
+    text-align: center;
+}
+.innerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    height:15px;
+}
+#string{
+    margin-top:25px;
+   
+}
+#string1{
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+input{
+    border-top: 2px solid;
+}
+hr{
+    border-top: 1px solid black;
+    width: 90%;
+}
+
+.positionBox ,.outputBox{
+    margin-top: 10px;
+}
+#arithmeticops{
+    margin-right: 97px;
+}
+.positionBox{
+    margin-bottom: 9px;
+}
