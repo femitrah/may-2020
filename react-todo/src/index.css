@@ -1,0 +1,11 @@
+.todoItems{
+  text-align: center;
+  font-weight: bold;
+  font-size:20px;
+}
+
+.checkList{
+  display:flex;
+  justify-content: center;
+  gap:35px;
+}
