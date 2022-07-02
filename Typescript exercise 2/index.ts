@@ -5,7 +5,7 @@ interface employeePersonalInfo {
     postOffice:String;
     thaluka:String;
     district:String;
-}
+    }
 let objectOne={
     userName:"palaniselvam",
     streetName:"Karaivalainthanpatti",
@@ -13,7 +13,7 @@ let objectOne={
     thaluka:"Srivilliputtur",
     district:"Viruthunagar",
    }
-   function stringOnly(objectOne:employeePersonalInfo){
+   const stringOnly=(objectOne:employeePersonalInfo)=>{
     console.log(objectOne)
     console.log(`${objectOne.userName},${objectOne.streetName},${objectOne.postOffice},${objectOne.thaluka},${objectOne.district}`);
    }
@@ -31,10 +31,11 @@ const objectTwo={
     leaveSalary:1000,
     salaryincrement:2000,
 }
-numberOnly(objectTwo)
-function numberOnly(objectTwo:employeeSalarayInfo){
+
+const numberOnly=(objectTwo:employeeSalarayInfo)=>{
    console.log (`${objectTwo.montlySalary},${objectTwo.pfAmount},${objectTwo.leaveSalary},${objectTwo.salaryincrement}`)
 }
+numberOnly(objectTwo)
 
 interface employeeOtherInfo{
     marrageStates:string;
@@ -49,7 +50,7 @@ const objectThree={
     doYouHaveCar:false,
 }
 
-function booleanOnly(objectThree:employeeOtherInfo){
+const booleanOnly=(objectThree:employeeOtherInfo)=>{
     console.log(`${objectThree.marrageStates},${objectThree.activeUser},${objectThree.doYouHaveBike},${objectThree.doYouHaveCar}`);
  }
  booleanOnly(objectThree);
@@ -69,7 +70,9 @@ const inatersection={
     profile:"good",
     rating:4.5,
 }
-inatersectionFunction(inatersection)
-function inatersectionFunction(inter:intersectionOne&intersectionTwo){
+type inatersection=intersectionOne&intersectionTwo;
+
+const inatersectionFunction=(inter:inatersection)=>{
 console.log( `${inter.userName},${inter.password},${inter.profile},${inter.rating}`)
 }
+inatersectionFunction(inatersection);

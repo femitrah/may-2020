@@ -10,42 +10,45 @@
 
 
 
-console.log("Result",OnlyString(5,6));
-console.log("OnlyString",OnlyString("palani","selvam"))
 
-function OnlyString(a:any,b:any){
+
+const OnlyString=(a:any,b:any)=>{
       if(typeof a ==="string" && typeof b ==="string")
     {  if(a.length>=1&&b.length>=1){
        return `${a}${b}`
-    }  else if(a.length>=1||b.length>=1){
+    }  else if(a.length>=1 || b.length>=1){
         var result=a+""+b
         return ""
     }
-     
 } 
 return testFunction(a,b);
 }
 
-function testFunction(valueOne:any,valueTwo:any){
+const testFunction=(valueOne:any,valueTwo:any)=>{
        if(typeof valueOne ==="number" && typeof valueTwo==="number"){   
         return valueOne+valueTwo
     } else {
-       console.log("success")       
+         console.log("not a number ")       
         }
          
     } 
-anyDataType("palaniselvam",-10);
+console.log("Result",OnlyString(5,6));
+console.log("OnlyString",OnlyString("palani","selvam"))
 
-function anyDataType(a:any,b:any){
-    console.log(`AllOw all DataType: A,${a},is ${typeof(a)},DataType: B,${b} is ${typeof(a)}`)
+const anyDataType=(a:any,b:any)=>{
+console.log(`AllOw all DataType: A,${a},is ${typeof(a)},DataType: B,${b} is ${typeof(a)}`)
 }
 
-stringAndBooleanOnly("string",true);
-function stringAndBooleanOnly(stringAndBooleanOne:string | boolean , stringAndBooleanTwo:string | boolean){
+anyDataType("palaniselvam",-10);
+
+
+
+const stringAndBooleanOnly=(stringAndBooleanOne:string | boolean , stringAndBooleanTwo:string | boolean)=>{
     var dataTypeOne=typeof(stringAndBooleanOne);
     var dataTypeTwo=typeof(stringAndBooleanTwo);
     console.log(`String and boolean DataType Only: A,${stringAndBooleanOne},is ${dataTypeOne},DataType: B,${stringAndBooleanTwo} is ${dataTypeTwo}`)
 }
+stringAndBooleanOnly("string",true);
 
 interface MitrahSohtkovilpattiBranch{
     kovilpattiEmployees_id:number;
@@ -61,6 +64,7 @@ const employee:inatersection_type={
     name:"S.Palaniselvam",
     maduraiEmployees_id:333,
     emplyoyees_name:"sathish",
+    
 }
 console.log(employee.kovilpattiEmployees_id,employee.name,employee.maduraiEmployees_id,employee.emplyoyees_name);
 
