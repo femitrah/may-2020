@@ -5,21 +5,55 @@ class App extends Component {
     super();
     this.state = {
       input_value: "",
-      checked_values: [],
-    };
-  }
+      total: "",
+      count: 0,
+      checked:false,
+      newobj:[],
 
+    }; 
+  }
   keyPress = (e) => {
-    if (e.keyCode === 13) {
+    if(e.target.value===""){
+      return null;
+    }
+   else if (e.keyCode === 13) {
       this.setState({ input_value: "" });
       this.setState({
-        checked_values: [...this.state.checked_values, e.target.value]
+        newobj: [...this.state.newobj,{data:e.target.value,key:false,id:Date.now()}]
       });
-
     }
+    console.log("chec",this.state.checked_values,e.target.value)
   };
 
-  render() {
+  handleCheckCount = (e,eventcount) => {
+    console.log("ec",eventcount,e.target.checked)
+  let check = eventcount.key=e.target.checked
+  console.log("e626c",check,eventcount,this.state.newobj)
+  let counter=this.state.newobj.filter((ele)=>ele.key===true)
+  console.log("counter",counter);
+  this.setState({...this.state.newobj,check})
+    this.setState({count:counter.length})
+
+  };
+
+  deleteItem = (liste) => {
+
+    const array1 = this.state.newobj;
+    // array1.name="checked"
+
+    const arr = array1.filter((event) => event.id !== liste.id);
+    console.log("lisSDFSDFte",liste) 
+    let counter1=this.state.newobj.filter((ele)=>ele.key===true)
+    console.log("c1",counter1)
+    if(liste.key===true){
+        this.setState({count:this.state.count-1});
+    }
+  
+    this.setState({ newobj: arr })
+  
+  }
+ render() {
+  console.log("sdsd",this.state.newobj)
     return (
       <div className="App">
         <div className="todoItems">
@@ -34,23 +68,28 @@ class App extends Component {
           />
 
           <div>
+            <div className="displayList">
+              <h1>TOTAL LIST:{this.state.newobj.length}</h1>
+              <h1>COMPLETED LIST:{this.state.count}</h1>
+              <h1>PENDING LIST:{this.state.newobj.length-this.state.count}</h1>
+            </div>
             <h1 className="todoList">TODO LIST</h1>
-
-            {this.state.checked_values.map((e) => (
+            {this.state.newobj.map((event) => (
               <p className="checkList">
-                {e}
-              <input type="checkbox"/>
-              <button>Delete</button>
-              
-              </p> 
-         
+                {event.data}
+                <input
+                  type="checkbox"
+                  checked={event.key}
+                  onChange={(e) => this.handleCheckCount(e,event)}
+                />
+                <button onClick={() => this.deleteItem(event)}>Delete</button>
+              </p>
             ))}
-            
           </div>
         </div>
       </div>
     );
   }
 }
-
 export default App;
+
