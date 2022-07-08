@@ -1,0 +1,70 @@
+
+.form-signin {
+  width: 500px;
+  height: 286px;
+  background-color: #f2f2f2;
+
+}
+ .container{
+    /* margin-left: 660px;
+    margin-top: 200px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+  }
+ 
+.backImage{
+  background-image: url("/src/earth-from-space-hd-wallpaper-1-thin.jpg") ;
+}
+.input-text{
+  width: 57%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 98px;
+  font-size: 17px;
+} 
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+input[type="submit"] {
+  background-color: #4c4eaf;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  margin-left: 204px;
+}
+ 
+input[type="submit"]:hover {
+  background-color: #a05345;
+
+}
+h1 {
+  color: black;
+  text-align: center;
+ 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.linkRef{
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+}
+a:link {
+  text-decoration: none;
+}
+/* body {
+  /* display: flex; 
+  font-family: "Gill Sans", sans-serif;
+ color: black;
+ background-image: url("/src/earth-from-space-hd-wallpaper-1-thin.jpg");
+} */
