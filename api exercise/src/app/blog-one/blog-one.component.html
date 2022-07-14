@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogOne</title>
+</head>
+<body>
+    <div class="heraderLabel">
+        <label id="blogOne">BlogOne</label> <button class="backButton" routerLink='/blog'>Back</button>
+      </div>
+    <div class="formContainer">
+      
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>NameLocal</th>
+               
+                <th>Type</th>
+                <th>UpdatedAt</th>
+                <th>Language</th>
+                <th>DescriptionLocal</th>
+                <th>Description</th>
+                <th>DblId</th>
+                <th>Countries</th>
+                
+                <th>Abbreviation</th>
+                <th>AbbreviationLocal</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let particular of particularObject">
+                    <td>{{particular.id}}</td>
+                    <td>{{particular.name}}</td>
+                    <td>{{particular.nameLocal}}</td>
+                   
+                    <td>{{particular.type}}</td>
+                    <td>{{particular.updatedAt}}</td>
+                    <td>{{particular.language.name}}</td>
+                    <td>{{particular.descriptionLocal}}</td>
+                    <td>{{particular.description}}</td>
+                    <td>{{particular.dblId}}</td>
+                    <td>{{particular.countries}}</td>
+                    
+                    <td>{{particular.abbreviation}}</td>
+                    <td>{{particular.abbreviationLocal}}</td>
+
+
+                </tr>
+            </tbody>
+        </table>  
+        
+    </div>
+</body>
+</html>

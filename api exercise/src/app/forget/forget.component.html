@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Login</title>
+</head>
+<body>
+    <div class="enterYourUserName" *ngIf="this.enterYourUsername">
+        <div class="headerLable">
+            <label for="">Enter your username:</label>
+        </div>
+        <ul class="firstLi">
+          <li> <label  id="labelForUserName">UserName:</label><input type="text" id="UserName" [(ngModel)]="UserName" ></li>
+        </ul>
+        <div class="bottomContainer">
+           <p><label id="errorMessage">{{this.error}}</label></p>
+           <button (click)="userNameChecked()">verify</button> <button (click)="getUserName()">getUsername</button>
+       </div>
+    </div>
+
+    <div class="enterYourUserName" *ngIf="this.enterYourMobilenumber">
+        <div class="headerLable">
+            <label for="">Enter your MobileNumber:</label>
+        </div>
+        <ul class="firstLi">
+          <li> <label  id="labelForUserName">MobileNumber:</label><input type="text" id="UserName" [(ngModel)]="mobileNumber" ></li>
+        </ul>
+        <div class="bottomContainer">
+           <p><label id="errorMessage">{{this.error}}</label></p>
+           <button (click)="phoneNumberChecked('changePassword')">verify</button> 
+           <!-- <button>forget password</button>  -->
+       </div>
+    </div>
+
+    <div class="enterYourUserName" *ngIf="this.enterYourNewPassword">
+        <div class="headerLable">
+            <label for="">Enter your NewPassword:</label>
+        </div>
+        <ul class="firstLi">
+          <li> <label  id="labelForUserName">NewPassword:</label><input type="text" id="UserName" [(ngModel)]="newUserPassword" ></li>
+        </ul>
+        <div class="bottomContainer">
+           <p><label id="errorMessage">{{this.error}}</label></p>
+           <button (click)="newPassword()">verify</button> 
+           <!-- <button>forget password</button>  -->
+       </div>
+    </div>
+</body>
+</html>

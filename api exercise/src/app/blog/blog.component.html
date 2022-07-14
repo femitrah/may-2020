@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="formContainer">
+        <div class="topButton">
+            <label>Blog</label>
+            <button (click)="Logout()">Logout</button>
+        </div>
+        
+<ul class="textbox">
+<li><label>Search Name:</label><input type="text" name="search" id="search" [(ngModel)]="userInput"></li>
+</ul>
+        
+           
+        <div class="blogContainer">
+
+            <table class="output"> 
+                <thead>
+                    <tr>
+                        <th>S.no</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th class="action">Action</th>
+                    </tr>
+                        
+                </thead>
+                <tbody>
+                    <tr *ngFor="let apiobject Of extractdata | filter:userInput ;let i=index">
+                        <td>{{i+1}}</td>
+                        <td>{{apiobject.name}}</td>
+                        <td>{{apiobject.description}}</td>
+                        <td><button class="view" (click)="selectId(apiobject.id)">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <ul class="ul">
+                <li *ngFor="let apiobject Of extractdata | filter:userInput"  (click)="selectId(apiobject.id)" >{{apiobject.name}}</li>
+                import{RouterModuel.forRoot[(routes)]}
+                this.router.nevigate(["home"],{queryparams:{id:this.id}});
+                so how to gwt the quary params.
+                  first we need the ActiveRouter moduel it will help you to get the quray params values from the anothe file .
+                  afert import the activate Router moduel we should specify the router in the constractor.like
+                  constractor(private router:ActivatedRouter){
+                    ngOnit(){
+                   this.router.queryparams.subscrib((values:any)=>{
+                    console.log("values",values);
+                   })
+                    }
+                  } 
+what is guard?
+guard it is used to block the without register  to see the paraicular pages
+What are all the guards availabel in angular?
+  canActive.
+  canActiveChild.
+  canload.
+  candeactive.
+so how to install the guards?
+ng g g verify it will import a new router guard it was have two file one is testing file and another one is ts files
+   guard it is one of the service so that we should specify the guards in the app moduel providers.
+   
+
+            </ul> -->
+     
+    </div>
+    </div>
+</body>
+</html>

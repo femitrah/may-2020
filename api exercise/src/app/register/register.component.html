@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+  
+    <div class="topContainer">
+       <button class="logout" routerLink="/login">login</button>
+    </div>
+    <div class="formContainer">
+        <div class="heraderLabel">
+          <p>Register</p>
+        </div>
+        <div class="registerForm">
+            
+                 <ul>
+                     <li><label> UserName: </label><input type="text" id="UserName" [(ngModel)]="setUserName" ></li>
+                     <li><label> Email: </label><input type="email" id="email" [(ngModel)]="setEmail"></li>
+                     <li><label> Password: </label><input type="password" id="password" [(ngModel)]="setPassword" name="password" ></li>
+                     <li><label>confirm password:</label><input type="password" id="confirmPassword" [(ngModel)]="setConfirmPassword" ></li>
+                     <li><label>Mobile number:</label><input type="tel" id="mobileNumber" [(ngModel)]="setMobileNumber" size="10" minlength="10" maxlength="10"></li>
+                 </ul>  
+           
+            <div class="errorContainet">
+                <label class="errorMessage">{{this.error}}</label>
+            </div>
+                   <button class="register" (click)="register()">Register</button>
+        </div>
+    </div>
+<!-- 
+    import{Routes}from "@angular/core"
+const router:Routs=[
+{path:'home',component:HomeComponent},
+{path:'login',component:LogingComponent},
+{path:'profile',component:ProfileComponent},
+{path:'contact',component:ContactComponent},
+{path:'',redirection:'login'}
+{path:'**'redirection}
+<appComponent>
+<router-outlet></router-outlet>
+</appComponent>
+RouterModele
+]
+
+
+
+ -->
+</body>
+</html>
