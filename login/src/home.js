@@ -1,14 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-// import GetDetails from "./viewdetails";
-import App1 from './viewdetails'
+import GetDetails from "./viewdetails";
+import App1 from "./viewdetails";
 function Home() {
   const [posts, setPosts] = useState([]);
-  const [bibleData, setBibledata] = useState([]);
   const [search, setSearch] = useState("");
-  const [search_index, setSearch_index] = useState("");
-  const [searchbook, setSearchbook] = useState("");
   const fetchPost = async () => {
     const response = await fetch("https://api.scripture.api.bible/v1/bibles", {
       method: "GET",
@@ -16,26 +13,10 @@ function Home() {
     });
     const data2 = await response.json();
     setPosts(data2.data);
-    setBibledata(data2.data);
   };
   useEffect(() => {
     fetchPost();
   }, []);
-
-  const addBook = (val, index) => {
-    console.log("index:", index);
-    console.log("value:", val.id);
-    setSearch_index(val.id);
-    if (searchbook.length > 0) {
-      setSearchbook(() => [...searchbook, val]);
-    }
-
-    setSearchbook(() => [...searchbook, val]);
-
-    let filteredBook = bibleData.filter((ab) => ab.id !== val.id);
-    setBibledata(filteredBook);
-  };
-
   const validateRoute = () => {
     const value = JSON.parse(localStorage.getItem("Data"));
     const currentData = value.map((ele) => {
@@ -47,7 +28,7 @@ function Home() {
 
     localStorage.setItem("Data", JSON.stringify(value));
   };
-// console.log("123search_index",search_index,bibleData)
+
   return (
     <div className="home-container">
       <div className="home-form">
@@ -87,7 +68,9 @@ function Home() {
                       <td>{e.description}</td>
                       <div>
                         <td>
-                          <Link to={`/app1/${e.id}`}><button onClick={() => addBook(e,i)}>View</button></Link>
+                          <Link to={`/app1/${e.id}`}>
+                            <button>View</button>
+                          </Link>
                         </td>
                       </div>
                     </tr>
