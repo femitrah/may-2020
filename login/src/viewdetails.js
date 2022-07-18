@@ -1,89 +1,59 @@
-import * as React from 'react';
-import { Routes, Route, useParams,BrowserRouter } from 'react-router-dom';
-import {useState,useEffect} from 'react';
-// import {useParams} from  "react-router-dom";
-import Home from './home'
+import React from "react";
+import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 export function GetDetails() {
-    const [posts, setPosts] = useState([]);
-  const [bibleData, setBibledata] = useState([]);
-  const [search, setSearch] = useState("");
-  const [search_index, setSearch_index] = useState("");
-  const [searchbook, setSearchbook] = useState("");
-
+  const [book, setBook] = useState([]);
   useEffect(() => {
-    console.log("useEffect")
+    console.log("useEffect");
     const fetchPost = async () => {
-      const response = await fetch("https://api.scripture.api.bible/v1/bibles", {
-        method: "GET",
-        headers: { "api-key": "6d77d726b980143eff391187ac316c51" },
-      });
-      const data2 = await response.json();
-     setPosts(data2.data);
-      setBibledata(data2.data);
+      const response = await fetch(
+        "https://api.scripture.api.bible/v1/bibles",
+        {
+          method: "GET",
+          headers: { "api-key": "6d77d726b980143eff391187ac316c51" },
+        }
+      );
+      const data1 = await response.json();
+      console.log("data1", data1);
+      setBook(data1.data);
     };
-     fetchPost();
+    fetchPost();
   }, []);
 
-  let { userId }= useParams();
-    console.log("ui",userId)
-    console.log("getitem",posts,"id",userId)
-    let bookData=posts.filter((d)=>{
-        if(userId===d.id){
-            console.log("output",d)
-            return d
-        }
-    })
-   
-    console.log(bookData)
-    return(
-        <h1>hello{bookData[0].name}</h1>
-    )
+  let { userId } = useParams();
+  console.log("ui", userId);
+  console.log("getitem", book, "id", userId);
+  let bookData = book.filter((d) => {
+    if (userId === d.id) {
+      console.log("output", d);
+      return d;
+    }
+  });
+  console.log("bd", bookData.length);
+  return (bookData.length == 0 ? null : 
 
+  <div className="tableData">
+  <table>
+    <tr>
+      <th>S.No</th>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+     { bookData.map((e,i) => {
+        return (
+          <tr>
+            <td>{i + 1}</td>
+            <td>{e.name}</td>
+            <td>{e.description}</td>
+          </tr>
+        );
+      })}
+  </table>
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   const addBook = (val, index) => {
-//     console.log("index:", index);
-//     console.log("value:", val.id);
-//     setSearch_index(val.id);
-//     if (searchbook.length > 0) {
-//       setSearchbook(() => [...searchbook, val]);
-//     }
-
-//     setSearchbook(() => [...searchbook, val]);
-
-//     let filteredBook = bibleData.filter((ab) =>{
-//         if(ab.id===userId){
-//             return ab
-//         }
-//     });
-//     // setBibledata(filteredBook);
-//     console.log("bd",filteredBook)
-//   };
-
-    
-  
-    
-  }
-
-  
-  function App1 (){
-    return (
-<GetDetails/>
-
-      );
-
-  }
-  export default App1
+)
+}
+function App1() {
+  return <GetDetails />;
+}
+export default App1;
