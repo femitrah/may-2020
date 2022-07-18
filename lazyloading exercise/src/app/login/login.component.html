@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="formContainer">
+     <div class="loginlable">
+        <label class="loginLable">Login</label>
+     </div>
+     <ul>
+        <li><label>UserName:</label><input type="text" name="userName" [(ngModel)]="userName"></li>
+        <li><label>Password:</label><input type="password" name="password" [(ngModel)]="password"></li>
+        <li><label>{{this.error}}</label></li>
+        <li><button (click)="checkLogin()" >Login</button></li>
+        
+     </ul>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<table>
+    <thead>
+        <tr>
+            <th>S.no</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Order Status</th>
+            <th>Date</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let datas of convertedparse ;let i=index ">
+            <td>{{i+1}}</td>
+            <td>{{datas.productName}}</td>
+            <td>{{datas.numberOfQuantity}}</td>
+            <td>{{datas.orderStatus}}</td>
+            <td>{{datas.orderDate}}</td>
+        </tr>
+    </tbody>
+</table>

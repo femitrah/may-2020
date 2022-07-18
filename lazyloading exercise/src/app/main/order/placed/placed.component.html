@@ -1,0 +1,36 @@
+<div class="twoContainer">
+<div class="formContainer">
+
+    <div class="order">
+        <label>Order</label>
+    </div>
+    <ul>
+        <li>
+            <label>Product:</label>
+            <select name="name" id="name" [(ngModel)]="product">
+                <option value="not selected"></option>
+                <option value="Mobile">Mobile</option>
+                <option value="labtop">labtop</option>
+                <option value="watch">watch</option>
+                <option value="bike">bike</option>
+            </select>
+        </li>
+        <li><label>quantity:</label><input type="number" name="number" id="number" [(ngModel)]="quantity" ></li>
+        <li><label>order status:</label>
+            <select name="status" id="status" [(ngModel)]="status">
+                <option value="not selected"></option>
+                <option value="placed order">placed order</option>
+                <option value="completed order">completed order</option>
+                <option value="cancelled order">cancelled order</option>
+            </select>
+        </li>
+        <li><label>Date:</label><input type="date" name="date" [(ngModel)]="date"></li>
+        <li><button (click)="order()">Order</button></li>
+    </ul>
+</div>
+
+<div class="placedlistConatiner">
+    <p>Click to see the placed list:</p>
+    <button type="submit" (click)="placedList()">Placedlist</button>
+</div>
+</div>

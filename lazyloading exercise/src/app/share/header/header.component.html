@@ -1,0 +1,14 @@
+<div class="topnav" id="myTopnav">
+    <a class="active">MitrahSoft</a>
+    <a (click)="navigatePage('home')" >Home</a>
+    <a (click)="navigatePage('customer')">Customer</a>
+    <div class="dropdown">
+      <button class="dropbtn" (click)="navigatePage('order')">Order</button>
+       <div class="dropdown-content">
+        <a  (click)="navigatePage('placed')" >Placed Order</a>
+        <a  (click)="navigatePage('cancelled')" >Cancelled Order</a>
+        <a  (click)="navigatePage('completed')" >completed Order</a>
+      </div> 
+    </div>
+  </div>
+  
