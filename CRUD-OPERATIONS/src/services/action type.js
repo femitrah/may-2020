@@ -1,0 +1,2 @@
+const USERINFO = 'USERINFO';
+export{USERINFO}
