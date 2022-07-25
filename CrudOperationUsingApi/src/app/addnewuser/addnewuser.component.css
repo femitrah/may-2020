@@ -1,0 +1,35 @@
+.registerForm{
+    background-color: aliceblue;
+    border: 1px solid teal;
+    width: 650px;
+    position: relative;
+    top: 20px;
+    margin: 0px 20px 20px 40px;
+}
+.logo{
+    background-color: teal;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+}
+ul{
+    list-style: none;
+    text-align: left;
+    }
+button{
+    width: 150px;
+    border-style: none;
+    background-color: teal;
+    color: aliceblue;
+    height: 28px;
+    margin:5px 20px 3px 30px;
+}
+li{
+    padding: 10px;
+}
+input,select{
+    float: right;
+    width: 400px;
+    height:30px;
+    padding: 2px;
+}

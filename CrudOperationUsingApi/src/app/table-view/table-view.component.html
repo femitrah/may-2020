@@ -1,0 +1,35 @@
+<div class="divContainer">
+
+
+    <div class="tableContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Id</th>
+                    <th>Email</th>
+                    <th>Title</th>
+                    <th>Role</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let values Of array;let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{values.firstName}}</td>
+                    <td>{{values.lastName}}</td>
+                    <td>{{values.id}}</td>
+                    <td>{{values.email}}</td>
+                    <td>{{values.title}}</td>
+                     <td>{{values.role}}</td>
+                    <td><i class="fa fa-pencil-square-o" aria-hidden="true" id="edit" (click)="update(values.id)"></i><i
+                            class="fa fa-trash" aria-hidden="true" id="trash" (click)="delete(values.id)"></i></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

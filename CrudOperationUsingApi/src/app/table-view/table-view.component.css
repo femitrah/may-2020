@@ -1,0 +1,94 @@
+table{
+    border-collapse: collapse;
+    border: 1px solid black;
+    float: left;
+    margin: auto;
+    width:99%;
+    
+   
+}
+.tableContainer{
+     height: 855px;
+     width: 98%;
+     overflow: auto;
+     margin: 0px 0px 0px 20px;
+     position: relative;
+     top: 16px;
+    
+    
+}
+td{
+    background-color: antiquewhite;
+}
+tr,td,th{
+    border: 1px solid black;
+}
+th{
+    background-color: black;
+    height: 45px;
+    color: aliceblue;
+    text-align: center;
+    padding: 25px;
+    font-size: 20px;
+}
+td{
+padding: 10px;
+text-align: center;
+}
+#edit{
+    margin:0px 5px 0px 0px;
+}
+#trash{
+    margin:0px 0px 0px 5px ;
+    position: relative;
+    bottom: 1.5px;
+}
+#edit,#trash{
+color: brown;
+font-size: 30px;
+}
+#edit:hover{
+    color: teal;
+}
+#trash:hover{
+    color: teal;
+}
+.registerForm{
+    background-color: aliceblue;
+    border: 1px solid teal;
+    width: 600px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+    height: 380px;
+}
+.divContainer{
+    display: flex;
+}
+.logo{
+    background-color: teal;
+    color: aliceblue;
+    text-align: center;
+    font-size: 40px;
+}
+ul{
+    list-style: none;
+    text-align: left;
+    }
+button{
+    width: 150px;
+    border-style: none;
+    background-color: teal;
+    color: aliceblue;
+    height: 28px;
+    margin:5px 20px 3px 30px;
+}
+li{
+    padding: 10px;
+}
+input{
+    float: right;
+    width: 400px;
+    height:30px;
+    padding: 2px;
+}

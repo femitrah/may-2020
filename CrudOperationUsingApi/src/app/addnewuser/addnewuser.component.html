@@ -1,0 +1,22 @@
+<div class="registerForm">
+        <div class="logo">
+            <i class="fa fa-user-circle-o" aria-hidden="true" id="user"></i>
+        </div>
+         <ul>
+            <li *ngIf="this.editForm"><label>Your Id:</label><input type="text" name="id" [(ngModel)]="id" disabled></li>
+            <li><label>Firstname:</label><input type="text" name="name" [(ngModel)]="firstName"></li>
+            <li><label>Lastname:</label><input type="text" name="name" [(ngModel)]="lastName"></li>
+            <li><label>Email:</label><input type="email" name="name" [(ngModel)]="email"></li>
+            <li><label>Title:</label><input type="text" name="name" [(ngModel)]="title" ></li>
+            <li><label>Role:</label><select name="name" [(ngModel)]="role" >
+                <option value="Not Selected"></option>
+                <option value="Admin">Admin</option>
+                <option value="User">User</option>
+            </select></li>
+            <li *ngIf="this.addForm"><label> Password:</label><input type="password" name="mame" [(ngModel)]="password"></li>
+            <li *ngIf="this.addForm"><label>Confirm Password:</label><input type="password" name="mame" [(ngModel)]="confirmPassword"></li>
+            <li *ngIf="this.addForm"><button class="update" (click)="addUser()"  >Add New User</button> <button class="clear" (click)="clear()" >Clear</button></li>
+            <li *ngIf="this.editForm"><button class="update" (click)="updateUser()" >Update</button> <button class="clear" (click)="clear()" >Clear</button></li>
+        </ul>
+</div>
+
