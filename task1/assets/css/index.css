@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+    height: 92vh;
+    color: white;
+    background: #3d596f;
+}
+.container{
+    width: 750px;
+    height: 92vh; 
+    background: #3d596f;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.title-img img{
+    width: 70px;
+    padding: 3px;
+}
+h2{
+    font-size: 2rem;
+}
+h1{
+    font-size: 2.7rem;
+}
+h4{
+    margin: 25px 0px;
+    font-size: 1.2rem;
+}
+h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+
+}
+h5{
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+h6{
+    margin: 0px 30px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 14px;
+
+}
+input{
+    border: none;
+    outline: none;
+    background: #3d596f;
+    border-bottom: 1px solid white;
+    line-height: 2rem;
+    color: white;
+}
+.text-width input{
+    width: 595px;
+}
+input{
+    width: 290px; ;
+    line-height: 20px;
+    font-size: 15px;
+}
+#date-id{
+    width: 240px;
+    font-size: 13px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+.file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px ;
+}
+.file-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px  20px;
+    width: 400px;
+}
+#Medical-input{
+    line-height: 2rem;
+}
+.form {
+    font-size:15px;
+}
+.date-time{
+    display: flex;
+}
+.date-time img{
+    width: 50px;
+}
+.form-two {
+    font-size: 13px;
+}
+
+

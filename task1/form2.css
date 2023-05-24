@@ -1,0 +1,89 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;align-items: center;
+    height: 92vh;
+    color: white;
+}
+.container{
+    width: 450px;
+height: 550px; 
+   background: #3d596f;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.title-img img{
+    width: 50px;
+    padding: 3px;
+}
+h3{
+    margin: 20px 0px;
+}
+h5{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+h6{
+    margin: 0px 30px;
+    margin-top: 10px;
+    font-size: 9px;
+
+}
+input{
+    border: none;
+    outline: none;
+    background: #3d596f;
+    border-bottom: 1px solid white;
+}
+.text-width input{
+    width: 378px;
+}
+input{
+    width:180px ;
+    line-height: 16px;
+    font-size: 10px;
+}
+#date-id{
+    width: 149px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+.file{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px ;
+}
+.file-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+    width: 400px;
+}
+
+
+.form {
+font-size:10px;
+}
+.date-time{
+    display: flex;
+}
+.form-two {
+    font-size: 7px;
+}

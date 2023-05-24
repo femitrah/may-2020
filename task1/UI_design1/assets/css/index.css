@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,.container,.titles,.first,.file-container,.date-time,.file{
+    display: flex;
+}
+body{
+     align-items: center;
+     justify-content: center;
+    height: 100vh;
+    color: white;
+    background: #3d596f;
+}
+.container{
+    width: 750px;
+    height: 92vh; 
+    background: #3d596f;
+    padding: 10px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+.titles{
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.title-img img{
+    width: 70px;
+    padding: 3px;
+}
+h2{
+    font-size: 2rem;
+}
+h1{
+    font-size: 2.7rem;
+}
+h4{
+    margin: 25px 0px;
+    font-size: 1.2rem;
+}
+h3{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+h5{
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.EmailAddress{
+    margin: 100px 30px;
+    font-size: 15px;
+    font-style: normal;
+}
+.address{
+    margin-top: 30px;
+}
+input{
+    border: none;
+    outline: none;
+    background: #3d596f;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.text-width input{
+    width: 595px;
+}
+.text-width #full-Name{
+    line-height: 2rem;
+}
+
+input{
+    width: 290px; ;
+    line-height: 20px;
+    font-size: 15px;
+}
+#date-id{
+    width: 240px;
+    font-size: 13px;
+}
+.first{
+    flex-direction: column;
+    margin: 0px 30px;
+}
+.file{
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px ;
+}
+.file-container{
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px  20px;
+    width: 400px;
+}
+.Medical-input{
+    line-height: 2rem;
+}
+.form {
+    font-size:15px;
+}
+
+.date-time img{
+    width: 50px;
+}
+.form-two {
+    font-size: 13px;
+}
+
+
