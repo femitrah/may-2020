@@ -1,0 +1,199 @@
+/* ---------------userDetails----------------- */
+.listcard {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    margin-left: 25px;
+}
+
+.list-card-text {
+    padding: 50px 25px 0px;
+    border: 1px solid black;
+    width: 450px;
+}
+
+.list-card-img img {
+    width: 450px;
+    border-radius: 14px;
+    height: 650px;
+}
+
+/* ---------------userList----------------- */
+/* 
+.main {
+    background: #beb6b6de;
+    margin: 0px 30px;
+    height: 450px;
+}
+
+.list-card {
+    width: 240px;
+    background: white;
+    padding: 5px;
+    margin: 10px 0px;
+    display: flex;
+}
+
+.list-card img {
+    width: 230px;
+    height: 200px;
+}
+
+.list-card ul {
+    text-align: center;
+    padding: 0px;
+}
+
+.card-btns {
+    display: flex;
+    width: 240px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.cardlog {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user-list-card{
+    display: flex;
+} */
+
+/* ----------------------userEditForm---------------------------- */
+/* .userEditForm-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} */
+.gender {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+::placeholder {
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+/* ------------userLogin------------------------------ */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px inset gray;
+    padding: 10px;
+}
+
+.form img {
+    width: 15%;
+}
+
+.form Button,
+p {
+    margin: 10px;
+}
+
+.form input {
+    margin: 5px 0px;
+    font-weight: bold;
+    width: 30%;
+}
+
+/* ---------------------userRegister------------------------------ */
+.userRegister-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userRegister-form img {
+    width: 250px;
+}
+
+.userRegister-form input,
+label {
+    margin: 5px 0px;
+    font-weight: bold;
+    width: 30%;
+}
+
+.userRegister-form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px inset gray;
+    padding: 10px;
+}
+
+/* _________Nopage _____________________ */
+.nopage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    color: red;
+}
+
+/* ----------------------------------------? */
+.user-list-card{
+    background: gray;
+    width: 100%;
+    margin: 0;
+}
+.inside-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    background: #f8f5f5;
+margin: 15px 0px;
+}
+.card-btns {
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+}
+
+.list-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+.list-card img {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+}
+
+.list-card ul {
+    text-align: center;
+    padding: 0;
+}
+.Logout{
+    position: fixed;
+    bottom: 58px;
+    /* float: right; */
+    right: 30px;
+}

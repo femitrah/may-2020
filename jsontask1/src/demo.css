@@ -1,0 +1,56 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.checkBoxDiv,.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+select{
+    width: 100px;
+    height: 20px;
+    margin-left: 5px;
+}
+.tableDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+table,th,td{
+    border: 1px solid rgb(199, 33, 199);
+    border-collapse: collapse;
+}
+table{
+    width: 80%;
+    text-align: center;
+}
+
+.tableMember td{
+   padding: 3px;
+   border: none;
+   margin: 3px;
+   width: 100px;
+} 
+#members{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+td li{
+    border: 1px solid red;
+}
+
+
+/* .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */

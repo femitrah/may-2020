@@ -1,0 +1,86 @@
+*{
+    margin: 0;padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#e66465, #9198e5);
+}
+#title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+input,button{
+    padding: 5px;
+}
+input{
+    width: 350px;
+    border-radius: 10px 5px;
+    border: 1px solid black;
+    outline: none;
+
+}
+#errordisplay{
+font-size: 15px;
+color: rgb(202, 27, 27);
+margin-top: 5px;
+}
+.results{
+    background: white;
+    width: 365px;
+    height: 150px;
+    border: 1px solid black;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px outset ;
+    border-color: white gray gray white;
+    padding: 15px;
+    height: 500px;
+    width: 550px;
+    box-shadow: 3px 7px 15px black;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin:10px 0px ;
+}
+button{
+    margin: 5px;
+    width: 150px;
+}
+button:hover{
+    background: linear-gradient(#e66465, #9198e5);
+    color: white;
+    border-radius: 8px 5px;
+    border:1px solid white;
+
+}
+#display,#min,#max,#equal{
+    padding: 3px;
+}
+
+.display{
+    font-weight: 1.2rem;
+}
+
+
+/* Today status(10-04-2023):
+Learning:
+1) Learn the string methods in Javascript.
+
+Today's work:
+1) Worked on Javascript Task1
+2) Completed the  task conditions.
+3)small changes only 
+Weekly 
+Pending:
+1)  Work on the remaining  task */
