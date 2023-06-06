@@ -1,0 +1,7 @@
+let message = "Lets evolve together homies"
+message= message.split(" ")
+
+let a = message.map((x)=>{
+ return x
+}).join(" ")
+console.log("message",a);
